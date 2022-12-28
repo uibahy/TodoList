@@ -4,6 +4,7 @@ let tasks = [
 
 tasks = JSON.parse(localStorage.getItem("tasks"))
 if (!tasks) tasks = [];
+
 function taskForm(){
     document.getElementById("todoList").innerHTML = ""
     let taskIndex = 0
