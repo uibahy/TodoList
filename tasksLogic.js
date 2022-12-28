@@ -22,9 +22,9 @@ function taskForm(){
                     </div>
         
                     <div class="icons">
-                        <div id="editTodo" onclick="editTask(${taskIndex})" class="edit"><img src="/edit.svg" alt=""></div>
-                        <div id="removeBtn" onclick="deleteTask(${taskIndex})" class="delete"><img src="/trash.svg" alt=""></div>
-                        <div ondblclick="undoTask(${taskIndex})" id="doneTask" onclick="doneTask(${taskIndex})" class="done"><img src="/trash-true.svg" alt=""></div>
+                        <div id="editTodo" onclick="editTask(${taskIndex})" class="edit"><img src="/icons/edit.svg" alt=""></div>
+                        <div id="removeBtn" onclick="deleteTask(${taskIndex})" class="delete"><img src="/icons/trash.svg" alt=""></div>
+                        <div ondblclick="undoTask(${taskIndex})" id="doneTask" onclick="doneTask(${taskIndex})" class="done"><img src="/icons/trash-true.svg" alt=""></div>
                     </div>
                 </div>
             `
