@@ -70,7 +70,6 @@ function editTask(taskIndex){
 }
 
 function deleteTask(taskIndex){
-    // alert(taskIndex)
     tasks.splice(taskIndex, 1)
     localSt()
     taskForm()
@@ -87,18 +86,6 @@ function undoTask(taskIndex){
     localSt()
     taskForm()
 }
-
-
-// function localSt(){
-//     let tasksString = JSON.stringify(tasks)
-//     localStorage.setItem("tasks", tasksString)  
-//     taskForm()
-// }
-
-// localSt()
-
-
-// 
 
 function localSt(){
     let tasksString = JSON.stringify(tasks)
