@@ -82,7 +82,7 @@ function deleteTask(taskIndex){
 function doneTask(taskIndex){
     Swal.fire(
         'Good job!',
-        'You clicked the button!',
+        '',
         'success'
       )
     tasks[taskIndex].completed = true
