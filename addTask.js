@@ -3,16 +3,6 @@ let tasks = [
         title: "first",
         date: "12/12/12",
         completed: false,   
-    },
-    {
-        title: "first",
-        date: "12/12/12",
-        completed: false,   
-    },
-    {
-        title: "first",
-        date: "12/12/12",
-        completed: false,   
     }
 ]
 
