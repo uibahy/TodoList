@@ -11,7 +11,7 @@ function taskForm(){
     document.getElementById("todoList").innerHTML = ""
     let taskIndex = 0
 
-    for (task of tasks){
+    for (task of Object.keys(tasks)){
 
         let taskFormat =
             `
