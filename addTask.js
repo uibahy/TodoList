@@ -1,17 +1,16 @@
 let tasks = [
-    {
-        title: "first",
-        date: "12/12/12",
-        completed: false,   
-    }
+
 ]
 
 tasks = JSON.parse(localStorage.getItem("tasks"))
+if (tasks == null){
+    tasks = []
+}
 function taskForm(){
     document.getElementById("todoList").innerHTML = ""
     let taskIndex = 0
 
-    for (task of Object.keys(tasks)){
+    for (task of tasks){
 
         let taskFormat =
             `
@@ -46,7 +45,13 @@ function addTask(){
     }
 
     if (inputValue.length == 0){
-        alert("fuck off fnr")
+        Swal.fire({
+            text: 'empty task?.. seriously? FUCK OFF!',
+            imageUrl: 'https://i.pinimg.com/originals/d6/3e/dd/d63edd9af879f866baea5e3c5b506959.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
     } else {
         tasks.push(newTask)
     }
@@ -76,6 +81,11 @@ function deleteTask(taskIndex){
 }
 
 function doneTask(taskIndex){
+    Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
     tasks[taskIndex].completed = true
     localSt()
     taskForm()
