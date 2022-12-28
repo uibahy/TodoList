@@ -10,6 +10,7 @@ tasks = JSON.parse(localStorage.getItem("tasks"))
 function taskForm(){
     document.getElementById("todoList").innerHTML = ""
     let taskIndex = 0
+
     for (task of tasks){
 
         let taskFormat =
@@ -24,7 +25,7 @@ function taskForm(){
                     <div class="icons">
                         <div id="editTodo" onclick="editTask(${taskIndex})" class="edit"><img src="/edit.svg" alt=""></div>
                         <div id="removeBtn" onclick="deleteTask(${taskIndex})" class="delete"><img src="/trash.svg" alt=""></div>
-                        <div ondblclick="undoTask(${taskIndex})" id="doneTask" onclick="doneTask(${task.id})" class="done"><img src="/trash-true.svg" alt=""></div>
+                        <div ondblclick="undoTask(${taskIndex})" id="doneTask" onclick="doneTask(${taskIndex})" class="done"><img src="/trash-true.svg" alt=""></div>
                     </div>
                 </div>
             `
