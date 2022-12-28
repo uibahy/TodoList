@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.todoList{
+    box-sizing: border-box; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 1px;
+
+    background: #F5F8FA;
+    border: 1px solid #E3E8EF;
+    border-radius: 4px;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    width: 100%;
+
+    border-bottom: 1px solid #E3E8EF;
+}
+
+.textDate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    gap: 4px;
+}
+
+.textDate h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px;
+
+    color: #1A202C;
+}
+
+.textDate p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0px;
+
+    letter-spacing: 0.1px;
+    color: #718096;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
+.done,
+.delete,
+.edit{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 4px;
+    background: rgb(227, 232, 239);
+    border-radius: 64px;
+}
+.done{
+    background-color: rgba(56, 161, 105, 0.15);
+}
+.done:hover{
+    background-color: rgba(56, 161, 105, 0.382);
+}
+.delete{
+    background: rgba(245, 101, 101, 0.15);
+}
+.delete:hover{
+    background: rgba(245, 101, 101, 0.382);
+}
+.edit:hover{
+    background: rgb(206, 211, 218);
+}
+
+
+
+
+.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    border-radius: 12px;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.btn:focus,
+.btn:active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.addForm{
+    display: flex;
+    gap: 8px;
+}
+
+#true {
+    text-decoration: line-through;
+    color: #1a202c33;
+}
