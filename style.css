@@ -150,3 +150,8 @@
     text-decoration: line-through;
     color: #1a202c33;
 }
+/* 
+#true #editTodo {
+    cursor: not-allowed;
+    opacity: 0.5;
+} */
